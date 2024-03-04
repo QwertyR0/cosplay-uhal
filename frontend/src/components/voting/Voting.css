@@ -1,0 +1,134 @@
+.votingC {
+    display: flex;
+    max-width: min-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-inline: -4vh;
+    margin-top: 4vh;
+}
+
+.vButton {
+    /*circle div*/
+    display: flex;
+    height: 3vh;
+    width: 11vh;
+    font-size: 1.2rem;
+    line-height: 3vh;
+    border-radius: 50%;
+    background-color: #6e7dd2;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+ 
+.vcard {
+    max-width: 50%;
+    padding-bottom: 10%;
+    background-color: #2D3250;
+    min-height: 0;
+    padding-inline: 2vw;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 1vh;
+}
+
+/* .vcard {
+    width: 60%;
+    background-color: #2D3250;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+} */
+
+.card h2 {
+    font-size: 1.2rem;
+}
+
+.card h3 {
+    font-size: 1rem;
+
+}
+
+.vButton.red {
+    background-color: #e84747;
+}
+
+.vButton.green {
+    background-color: #4CAF50;
+}
+
+.submit {
+    padding: 6vh;
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+
+.voteCard{
+    background-color: #2D3250;
+    min-height: 40vh;
+    padding: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.broadcastCard {
+    min-height: 40vh;
+    padding: 20px;
+    text-align: center;
+}
+
+.rateButton {
+    margin: 0;
+    border: none;
+    min-width: 60%;
+    padding-left: 2.8vw;
+    padding-right: 2.8vw;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    font-size: 2rem;
+    border-radius: 4px;
+    background-color: #6e7dd2;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    color: white;
+    cursor: pointer;
+}
+
+.rateButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5vh;
+    height: 5vh;
+}
+
+.rtext {
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: min-content;
+    align-self: center;
+}
+
+.vcard h2{
+    font-size: 1rem;
+}
+
+.hide {
+    visibility: hidden;
+}

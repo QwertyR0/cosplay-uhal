@@ -1,0 +1,59 @@
+.App{
+  /* display: flex; */
+  height: 100vh;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.bg {
+  background-image: url("../public/a1.png");
+  /*center it horizantily but move it down vertically by 10px*/
+  background-position: 60px 30px;
+  background-size: 70%;
+  /*animating .bg*/
+  animation: slide 30s infinite ease-in-out;
+}
+
+/*make it so that it will resemble sliding in the same picture and then switch to c1 sometime later*/
+@keyframes slide {
+  0% {
+    background-position: 60px 30px;
+  }
+  10% {
+    background-image: url("../public/b1.png");
+    background-position: 0px 90px;
+  }
+  20% {
+    background-position: 40px 20px;
+  }
+  30% {
+    background-position: 80px 40px;
+  }
+  40% {
+    background-position: 20px 60px;
+  }
+  50% {
+    background-image: url("../public/c1.png");
+    background-position: 50px 50px; 
+  }
+  60% {
+    background-position: 70px 30px; 
+  }
+  70% {
+    background-position: 10px 80px; 
+  }
+  80% {
+    background-position: 40px 10px; 
+  }
+  90% {
+    background-position: 90px 0px;
+  }
+  100% {
+    background-image: url("../public/a1.png");
+    background-position: 60px 30px;
+  }
+}

@@ -1,0 +1,47 @@
+.navbar {
+    background-color: #2D3250;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        height: 10%;
+    }
+    .textStuff {
+        font-size: 1.5rem;
+    }
+}
+
+.navbar h2{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.navbar h4{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+
+.textStuff {
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}

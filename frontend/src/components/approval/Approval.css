@@ -1,0 +1,65 @@
+body.active-ApprovalModal {
+    overflow-y: hidden;
+}
+
+.appprovalModal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.approvalModal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    overflow-y: auto;
+    max-height: 80%;
+}
+
+.apButton {
+    color: white;
+    padding: 2.3vh 3.2vw;
+    margin: 1.3vh 0;
+    margin-top: 10%;
+    border: none;
+    border-radius: 0.65vh;
+    cursor: pointer;
+}
+
+.apButton.green{
+    background-color: #4CAF50;
+}
+
+.apButton.red{
+    background-color: #f44336;
+}
+
+.apButtons {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: row;
+}
+
+.apTextS {
+    width: 40vh;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: #6e7dd2;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    color: white;
+    margin-top: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+}
