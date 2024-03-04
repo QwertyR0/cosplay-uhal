@@ -5,7 +5,7 @@ import Login from './components/login/Login';
 import ErrorInd from './components/errorInd/ErrorInd';
 import { useEffect, useState } from 'react';
 import VoteMenu from './components/voteMenu/VoteMenu';
-export var socket = new WebSocket("ws://193.57.41.234:80/");
+export var socket = new WebSocket("wss://sunucu.uhal.online/");
 var retry = 0;
 var beenTrying = false;
 
@@ -28,7 +28,7 @@ function App() {
   const retryConnection = () => {
     if(retry < 5) {
       retry++;
-      socket = new WebSocket("ws://192.168.1.34:8080");
+      socket = new WebSocket("wss://sunucu.uhal.online/");
     } else {
       console.log("Failed to connect to server");
       document.getElementById("errorMessage").innerText = "Sunucuya bağlanılamadı.";
